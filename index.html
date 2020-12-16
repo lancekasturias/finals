@@ -60,7 +60,7 @@ if( document.myForm.cpassword.value == "" ) {
  
  
   
-
+	
    
 
  function Validate() {
@@ -70,6 +70,8 @@ if( document.myForm.cpassword.value == "" ) {
             alert("Passwords do not match.");
             return false;
         }
+		
+	alert("You are now registered.");
         return true;
     }
 
@@ -83,7 +85,7 @@ if( document.myForm.cpassword.value == "" ) {
 <br>
 <br>
 
- <form action="mailto:lanceasturias@gmail.com" method="post" enctype="text/plain" name = "myForm" onsubmit = "return(validate());">
+ <form  name = "myForm" onsubmit = "return(validate());">
  <div class="border cont shadow=lg text-center">
  <h2>Fill out the form below and click register</h2>
  <br>
